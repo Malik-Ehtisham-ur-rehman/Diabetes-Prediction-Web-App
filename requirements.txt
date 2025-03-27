@@ -1,3 +1,4 @@
+wheel
 Pillow==8.4.0
 streamlit
 pandas
@@ -6,4 +7,3 @@ scikit-learn
 matplotlib
 seaborn
 plotly
-
