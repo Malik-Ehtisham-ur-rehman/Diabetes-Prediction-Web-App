@@ -1,11 +1,3 @@
-# Required installations
-# pip install streamlit
-# pip install pandas
-# pip install sklearn
-# pip install matplotlib
-# pip install seaborn
-# pip install plotly
-
 # IMPORT STATEMENTS
 import streamlit as st
 import pandas as pd
@@ -23,6 +15,7 @@ st.set_page_config(page_title='Diabetes Prediction App', page_icon=':hospital:',
 @st.cache_data
 def load_data():
     try:
+        # Use a relative path or environment variable if possible
         df = pd.read_csv('diabetes.csv')
         return df
     except FileNotFoundError:
